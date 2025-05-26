@@ -1,6 +1,7 @@
 import pytest
 
 from uncle_bob_demo.stack import Stack
+from uncle_bob_demo.stack import UnderflowException
 
 
 @pytest.fixture
@@ -18,7 +19,7 @@ def test_after_first_push_is_not_empty(stack):
 
 
 def test_pop_empty_stack_raises_exception(stack):
-    with pytest.raises(Exception):
+    with pytest.raises(UnderflowException):
         stack.pop()
 
 
