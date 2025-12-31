@@ -19,3 +19,5 @@ dev = [
 pythonpath = "."
 python_functions = "test_*"
 
+[tool.ty.environment]
+root = ["."]
